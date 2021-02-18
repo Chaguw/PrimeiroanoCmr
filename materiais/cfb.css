@@ -1,0 +1,257 @@
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+	
+
+	*{
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-color: rgba(5, 5, 5, 0.8);
+	}
+
+
+
+
+
+/*______BANNER______*/
+	.banner{
+
+		text-align: center;
+		background-color: rgba(30, 30, 30, 0.5);
+		background: url(../imgs/cfbbg.png);
+		height: 300px;
+		border: none;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+
+
+	}
+
+	.banner h2{
+		font-family: "Montserrat";
+		border: none;
+		font-size: 100px;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.6);
+
+
+	}	
+/*______BANNER______*/
+
+
+
+
+
+/*______BOTÕES______*/
+
+	.btns button{
+
+		display: inline-block;
+		width: 200px;
+		height: 230px;
+		cursor: pointer;
+		border: none;
+		border-radius: 20%;
+		padding: 25px 30px;
+		letter-spacing: 3px;
+		transition: 0.5s;
+		/*overflow: hidden;*/
+		background: #000000;
+		color: #fff;
+		font-size: 18px;
+
+
+	}
+
+		.btns button:hover{
+
+		display: inline-block;
+		width: 230px;
+		height: 230px;
+		cursor: pointer;
+		border: none;
+		border-radius: 20%;
+		padding: 25px 30px;
+		letter-spacing: 3px;
+		transition: 0.5s;
+		/*overflow: hidden;*/
+		background: #03e9f4;
+		color: #000000;
+		text-decoration: underline;
+
+
+	}
+
+	.btns{
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+
+
+	.btn{
+		margin-left: -30px;
+		margin-top: 60.5%;
+
+	}
+
+	.bt1t{
+
+		margin-left: 10px;
+		margin-top: 50%;
+
+	}
+
+	.bt2t{
+
+		margin-left: 10px;
+		margin-top: 50%;
+
+	}
+
+	.bt3t{
+
+		margin-left: 10px;
+		margin-top: 50%;
+
+	}
+
+	.bt1t:hover{
+		background-color: silver;
+	}
+
+	.bt2t:hover{
+		background-color: silver;
+	}
+
+	.bt3t:hover{
+		background-color: silver;
+	}
+
+	.btn:hover{
+		background-color: silver;
+	}
+
+/*______BOTÕES______*/
+
+
+
+
+
+/*______MENU DROPDOWN______*/
+
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: #222;
+	font-family: "Montserrat";
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+
+}
+
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #222;
+	color: #fff;
+
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+
+}
+
+.menu ul li:hover ul{
+	visibility: visible;
+
+	
+}
+
+.menu a:hover{
+	background-color: silver;
+	color: black;
+}
+
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+	background-color: #069;
+}
+
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #222;
+	color: #fff;
+	font-family: "Montserrat";
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+
+}
+#bt_menu{
+	display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+@media(max-width: 800px){
+
+	label[for="bt_menu"]{
+	display: block;
+}
+
+	#bt_menu:checked ~ .menu{
+		margin-left: 0;
+	}
+
+
+	.menu{
+		margin-top: 5px;
+		margin-left: -100%;
+		transition: all .4s;
+	}
+
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+
+	.menu ul li:hover ul {
+		height: auto;
+		max-height: 200px;
+
+	}
+
+}
+
+
+/*______MENU DROPDOWN______*/
